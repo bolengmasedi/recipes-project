@@ -9,16 +9,16 @@ export class RecipeService {
 
     private recipes: Recipe[] = [
         new Recipe(
-            'A Test Recipe', 
-            'This is simply a test', 
-            'https://www.simplyrecipes.com/wp-content/uploads/2019/03/shrimp-scampi-horiz-a-1600.jpg',
-            [new Ingredients('Spice', 2)]
+            'Burger', 
+            'Salivating!', 
+            'https://unsplash.com/photos/cooked-food-on-black-bowl-ZuIDLSz3XLg',
+            [new Ingredients('Meat', 2), new Ingredients('Fries', 2)]
         ),
         new Recipe(
-            'Another Recipe', 
-            'This is simply another test', 
-            'https://www.simplyrecipes.com/wp-content/uploads/2019/03/shrimp-scampi-horiz-a-1600.jpg',
-            [new Ingredients('Salt', 1), new Ingredients('Pepper', 1)]
+            'French Toast', 
+            'Amazing breakfast', 
+            'https://unsplash.com/photos/toast-bread-with-blueberry-on-black-plate-zcUgjyqEwe8',
+            [new Ingredients('Bread', 1), new Ingredients('Eggs', 1), new Ingredients('Syrup', 2)]
         ),
     ];
 
@@ -26,6 +26,10 @@ export class RecipeService {
 
     getRecipes() {
         return this.recipes.slice();
+    }
+
+    getRecipe(id: number) {
+        return this.recipes[id];
     }
 
     addToShoppingList(ingredients: Ingredients[]) {
