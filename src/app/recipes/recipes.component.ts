@@ -8,15 +8,4 @@ import { RecipeService } from './recipe.service';
   styleUrl: './recipes.component.css',
   providers: [RecipeService]
 })
-export class RecipesComponent {
-  selectedRecipe: Recipe;
-
-  constructor(private recipeService: RecipeService) { }
-
-  ngOnInit() {
-    this.recipeService.recipeSelected
-      .subscribe((recipe: Recipe) => {
-        this.selectedRecipe = recipe;
-      })
-  }
-}
+export class RecipesComponent {}
