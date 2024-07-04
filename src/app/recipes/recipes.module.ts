@@ -20,7 +20,6 @@ import { RecipeRoutingModule } from "./recipes-routing.module";
     ], 
     imports: [
         CommonModule,
-        FormsModule,
         ReactiveFormsModule,
         RecipeRoutingModule,
     ],
