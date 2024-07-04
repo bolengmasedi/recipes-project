@@ -3,7 +3,7 @@ import { EditShoppingListComponent } from "./edit-shopping-list/edit-shopping-li
 import { ShoppingListComponent } from "./shopping-list.component";
 import { FormsModule} from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { SharedModule } from "./../shared/shared.module";
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
     declarations: [
@@ -14,7 +14,7 @@ import { SharedModule } from "./../shared/shared.module";
         SharedModule,
         FormsModule, 
         RouterModule.forChild([
-            { path: 'shopping-list', component: ShoppingListComponent}
+            { path: '', component: ShoppingListComponent}
         ]),
     ],
     exports: [
